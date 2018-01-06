@@ -1,6 +1,6 @@
-FROM jfloff/alpine-python:recent-slim
+FROM jfloff/alpine-python:latest-slim
 
-RUN apk add less
+RUN apk update && apk add less
 RUN pip install rotate-backups
 RUN mkdir /data
 COPY rotate-backups-in-data.sh /opt/rotate-backups-in-data.sh
