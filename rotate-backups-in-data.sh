@@ -1,2 +1,2 @@
 #!/bin/bash
-/usr/local/bin/rotate-backups "$@" /data
+/usr/bin/rotate-backups "$@" /data
