@@ -1,4 +1,4 @@
-FROM jfloff/alpine-python:latest-slim
+FROM python:alpine
 
 RUN apk update && apk add less
 RUN pip install rotate-backups
