@@ -1,6 +1,8 @@
 # docker-rotated-delete
 A tiny Docker image to provide you with the superb rotate-backups script without installation
 
+![docker status](https://img.shields.io/docker/build/cismet/rotated-delete.svg)
+
 ## What it is not
 * a backup script 
 * a backup utility
@@ -22,3 +24,10 @@ A tiny Docker image to provide you with the superb rotate-backups script without
 docker run -t --rm -v /var/backups/milquetoast/backups/:/data cismet/rotated-delete --daily=10 --weekly=5 --monthly=13 --yearly=5
 ```
 
+## playground
+
+```shell
+./createTestFiles.js
+ls testFiles
+docker run -t --rm -v $(pwd)/testFiles:/data cismet/rotated-delete --daily=8 --weekly=5 --monthly=13 --yearly=5
+```
