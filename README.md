@@ -1,3 +1,5 @@
+Forked from [cismet/docker-rotated-delete](https://github.com/cismet/docker-rotated-delete) to build versioned tags on DockerHub.
+
 # docker-rotated-delete
 A tiny Docker image to provide you with the superb rotate-backups script without installation
 
